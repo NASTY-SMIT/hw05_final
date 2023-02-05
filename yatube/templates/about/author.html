@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Об авторе проекта{% endblock %}
+{% block content %}
+<div class="tm-right-column">
+    <div class="tm-content-div">
+        <section id="welcome" class="tm-section">
+            <header>
+                <h2 class="tm-blue-text tm-welcome-title tm-margin-b-45">Всем привет!! Я Настя</h2>
+            </header>
+            <p>Я написала этот проект и сейчас учусь в яндекс практикуме. Я пришла в мир программирования с целью найти себя в этой профессии. Мне 18 лет и сейчас самое время определиться кем я хочу быть в жизни. Я перебирала множетсво профессий, но никакая из них меня не привлекли и я решила попробовать стать разработчиком потому что хочу зарабатывать деньги своим умом, а не физическим трудом.</p>
+        </section>
+        <section id="about" class="tm-section">
+            <div class="row">                                                                
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 push-lg-4 push-md-5">
+                    <header>
+                        <h2 class="tm-blue-text tm-section-title tm-margin-b-45">Обо мне</h2>
+                    </header>
+                    <p>Я живу в городе Барнауле, учусь в колледже и в практикуме. Из увлечений я люблю играть в игры (в свободное время!!!) и вести тик ток на игровую тематику. Мечтаю стать хорошим бэкендером и увезти всю свою семью жить на море.</p>
+                    <p>Мне очень нравится здесь учиться. По началу в первых спринтах я погружалась в теорию и было маленькое чувство одиночества, будто я там учусь совсем одна, но потом мы поближе познакомились со всеми ребятами и сейчас процесс обучения идет намного веселее.</p>
+                    <p>Все мои проекты вы можете посмотреть на моем git-hub:</p>
+                    <a href="https://github.com/NASTY-SMIT" class="tm-button tm-button-wide">Смотреть проекты</a>  
+                </div>
+
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 pull-lg-8 pull-md-7 tm-about-img-container">
+                    <img src="{% static 'img/neaty-02.jpg' %}" alt="Image" class="img-fluid">    
+                </div>  
+            </div>                            
+        </section>  
+
+        <section id="contact" class="tm-section">
+            <header><h2 class="tm-blue-text tm-section-title tm-margin-b-30">Связаться со мной</h2></header>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <form action="#contact" method="post" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Имя"  required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Сообщение" required></textarea>
+                        </div>                                            
+                        <button type="submit" class="float-right tm-button">Отправить</button>
+                    </form>    
+                </div>
+                
+                <div class="col-lg-6 tm-contact-right">
+                    <p>
+                        Вы можете связаться со мной и обсудить все, что вас еще интересует обо мне)))
+                    </p>
+                    <address>
+                        Алтайский край г.Барнаул,<br>
+                        Шмидт Анастасия<br>
+                        8-962-803-55-15
+                    </address>
+                </div>
+            </div>
+            
+        </section>
+{% endblock %} 

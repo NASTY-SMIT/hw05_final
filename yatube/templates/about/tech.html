@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Технологии{% endblock %}
+{% block content %}
+<div class="row">
+  <h1>Вот что я уже освоила:</h1>
+  <aside class="col-12 col-md-3">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        Python
+      </li>
+      <li class="list-group-item">
+        Django.ORM
+      </li>
+      <li class="list-group-item">
+        Язык запросов SQL
+      </li>
+      <li class="list-group-item">
+        Декораторы
+      </li>
+      <li class="list-group-item">
+        Игровой ООП
+      </li>
+      <li class="list-group-item">
+        Валидаторы
+      </li>
+    </ul>
+  </aside>
+  <article class="col-12 col-md-9">
+    <p>Для создания этого сайта мне пригодились умения фильтрации Django, создания моделей, работа с миграциями в бд, грамотное владение оформлением html и шаблонов Django. Я использовала django.contrib.auth, чтобы создать формы регистрации и авторизации пользователей, я применяла декоратор login_required, пагинатор и много много других интересных вещей!!!</p>
+  </article>
+</div>
+{% endblock %} 
