@@ -2,7 +2,7 @@ from django.core.cache import cache
 from django.test import Client, TestCase
 from django.urls import reverse
 from posts.models import Group, Post, User
-from posts. views import POSTS_PER_PAGE
+from yatube.settings import POSTS_PER_PAGE
 
 
 class PaginatorViewsTest(TestCase):

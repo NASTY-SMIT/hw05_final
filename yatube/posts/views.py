@@ -4,8 +4,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 
 from .forms import PostForm, CommentForm
 from .models import Group, Post, User, Comment, Follow
-
-POSTS_PER_PAGE = 10
+from yatube.settings import POSTS_PER_PAGE
 
 
 def index(request):
@@ -128,7 +127,7 @@ def profile_follow(request, username):
 @login_required
 def profile_unfollow(request, username):
     user = request.user
-    author = User.objects.get(username=username)
+    author = get_object_or_404(User, username=username)
     follow = (Follow.objects.select_related('author',
                                             'user').filter(author=author,
                                                            user=user))
