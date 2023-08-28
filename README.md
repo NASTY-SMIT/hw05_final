@@ -1,3 +1,72 @@
-# hw05_final
+# Yatube Project
+## Социальная сеть - дает пользователям возможность создать учетную запись, публиковать записи, коментировать их, подписываться на любимых авторов и отмечать понравившиеся записи.
 
-[![CI](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml)
+Подробное описание:
+
+- Десять последних записей выводятся на главную страницу. 
+- В админ-зоне доступно управление объектами модели Post.
+- Пользователь может перейти на страницу любого сообщества, где отображаются десять последних публикаций из этой группы.
+- Настроен эмулятор отправки писем.
+- Созданы статические  html страницы.
+- Большая часть кода покрыта unit-тестами.
+- Кастомные страницы ошибок.
+- С помощью sorl-thumbnail выведены иллюстрации к постам.
+- Создана система комментариев.
+- Кеширование главной страницы
+
+## Технологии в проекте
+> Python 3.9
+> Django 2.2
+> pytest
+> SQLite3
+
+### Как запустить проект: 
+ 
+Клонировать репозиторий и перейти в него в командной строке: 
+ 
+``` 
+git clone https://github.com/NASTY-SMIT/hw05_final.git
+``` 
+ 
+``` 
+cd  hw05_final  
+``` 
+ 
+Cоздать и активировать виртуальное окружение: 
+ 
+``` 
+python3 -m venv env 
+``` 
+* Если у вас Linux/macOS 
+ 
+    ``` 
+    source env/bin/activate 
+    ``` 
+ 
+* Если у вас windows 
+ 
+    ``` 
+    source env/scripts/activate 
+    ``` 
+ 
+``` 
+python3 -m pip install --upgrade pip 
+``` 
+Установить зависимости из файла requirements.txt: 
+ 
+``` 
+pip install -r requirements.txt 
+``` 
+ 
+Выполнить миграции: 
+ 
+``` 
+python3 manage.py migrate 
+``` 
+ 
+Запустить проект: 
+``` 
+python3 manage.py runserver 
+```
+
+##### By Shmidt Anastasia
